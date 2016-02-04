@@ -1882,7 +1882,7 @@ ul.nav > li.current_page_item.current > a:before {
  **   Secction:  Separator one        -----
 -----------------------------------------*/
 .separator-one {
-	background: rgba(52, 210, 147, 0.8);
+	background: rgba(234,33,31,0.44);
 	padding: 100px 0 100px 0;
 }
 .separator-one .green-btn {
@@ -1898,6 +1898,8 @@ ul.nav > li.current_page_item.current > a:before {
 	max-width: 800px;
 	margin-bottom: 20px;
 	margin-top: 15px;
+	font-size: xx-large;
+	font-weight: bolder;
 }
 /*---------------------------------------
  **   Section: Portfolio          -----
@@ -2368,7 +2370,7 @@ width: -webkit-calc(100% / 4);
 }
 .team-member:hover .details {
 	top: 0;
-	background: #333;
+	background: rgb(234, 33, 45);
 	color: white;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);

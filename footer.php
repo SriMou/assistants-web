@@ -14,20 +14,20 @@
 
 	<?php
 		$footer_sections = 0;
-		$zerif_address = get_theme_mod('zerif_address',__('Company address','zerif-lite'));
+		$zerif_address = get_theme_mod('zerif_address','<a href="https://www.google.co.in/maps/place/W+Link+Rd,+Malleshwaram,+Bengaluru,+Karnataka+560003/@12.9949908,77.5710477,17z/data=!4m7!1m4!3m3!1s0x3bae162355a286f7:0xe82bdab3828b12d6!2sW+Link+Rd,+Malleshwaram,+Bengaluru,+Karnataka+560003!3b1!3m1!1s0x3bae162355a286f7:0xe82bdab3828b12d6">Company Address</a>');
 		$zerif_address_icon = get_theme_mod('zerif_address_icon',get_template_directory_uri().'/images/map25-redish.png');
 		
-		$zerif_email = get_theme_mod('zerif_email','<a href="mailto:contact@site.com">contact@site.com</a>');
+		$zerif_email = get_theme_mod('zerif_email','<a href="mailto:info@assistyu.com">info@assistyu.com</a>');
 		$zerif_email_icon = get_theme_mod('zerif_email_icon',get_template_directory_uri().'/images/envelope4-green.png');
 		
-		$zerif_phone = get_theme_mod('zerif_phone','<a href="tel:0 332 548 954">0 332 548 954</a>');
+		$zerif_phone = get_theme_mod('zerif_phone','<a href="tel:+91-9986850650">+91-9986850650</a>');
 		$zerif_phone_icon = get_theme_mod('zerif_phone_icon',get_template_directory_uri().'/images/telephone65-blue.png');
 
-		$zerif_socials_facebook = get_theme_mod('zerif_socials_facebook','#');
-		$zerif_socials_twitter = get_theme_mod('zerif_socials_twitter','#');
-		$zerif_socials_linkedin = get_theme_mod('zerif_socials_linkedin','#');
-		$zerif_socials_behance = get_theme_mod('zerif_socials_behance','#');
-		$zerif_socials_dribbble = get_theme_mod('zerif_socials_dribbble','#');
+		$zerif_socials_facebook = get_theme_mod('zerif_socials_facebook','http://www.facebook.com/Assist-YU-App-1658280521109407');
+		$zerif_socials_twitter = get_theme_mod('zerif_socials_twitter','https://twitter.com/assistyu');
+//		$zerif_socials_linkedin = get_theme_mod('zerif_socials_linkedin','#');
+//		$zerif_socials_behance = get_theme_mod('zerif_socials_behance','#');
+//		$zerif_socials_dribbble = get_theme_mod('zerif_socials_dribbble','#');
 		
 		$zerif_accessibility = get_theme_mod('zerif_accessibility');
 		$zerif_copyright = get_theme_mod('zerif_copyright');
@@ -43,7 +43,7 @@
 		if(!empty($zerif_phone) || !empty($zerif_phone_icon)):
 			$footer_sections++;
 		endif;
-		if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || 
+		if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) ||
 		!empty($zerif_copyright)):
 			$footer_sections++;
 		endif;
@@ -98,13 +98,13 @@
 		// open link in a new tab when checkbox "accessibility" is not ticked
 		$attribut_new_tab = (isset($zerif_accessibility) && ($zerif_accessibility != 1) ? ' target="_blank"' : '' );
 		
-		if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) || 
+		if( !empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble) ||
 		!empty($zerif_copyright)):
-		
+
 					echo '<div class="'.$footer_class.' copyright">';
 					if(!empty($zerif_socials_facebook) || !empty($zerif_socials_twitter) || !empty($zerif_socials_linkedin) || !empty($zerif_socials_behance) || !empty($zerif_socials_dribbble)):
 						echo '<ul class="social">';
-						
+
 						/* facebook */
 						if( !empty($zerif_socials_facebook) ):
 							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_facebook).'"><i class="fa fa-facebook"></i></a></li>';
@@ -126,17 +126,17 @@
 							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_dribbble).'"><i class="fa fa-dribbble"></i></a></li>';
 						endif;
 						echo '</ul>';
-					endif;	
-			
-			
+					endif;
+
+
 					if( !empty($zerif_copyright) ):
 						echo esc_attr($zerif_copyright);
 					endif;
-					
-					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="http://themeisle.com/themes/zerif-lite/"'.$attribut_new_tab.' rel="nofollow">Zerif Lite </a>'.__('powered by','zerif-lite').'<a class="zerif-copyright" href="http://wordpress.org/"'.$attribut_new_tab.' rel="nofollow"> WordPress</a></div>';
-					
+
+					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" '.$attribut_new_tab.' rel="nofollow">Assist YU </a>'.__('powered by','zerif-lite').'<a class="zerif-copyright"'.$attribut_new_tab.' rel="nofollow"> Assist YU Technologies private limited</a></div>';
+
 					echo '</div>';
-			
+
 		endif;
 	?>
 
