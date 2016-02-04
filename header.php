@@ -85,13 +85,13 @@
 
 						echo '<a href="'.esc_url( home_url( '/' ) ).'" class="navbar-brand">';
 						
-							if( file_exists(get_stylesheet_directory()."/images/logo.png")):
+							if( file_exists(get_stylesheet_directory()."/images/logo_new.png")):
 							
-								echo '<img src="'.get_stylesheet_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
+								echo '<img src="'.get_stylesheet_directory_uri().'/images/logo_new.png" alt="'.get_bloginfo('title').'">';
 							
 							else:
 								
-								echo '<img src="'.get_template_directory_uri().'/images/logo.png" alt="'.get_bloginfo('title').'">';
+								echo '<img src="'.get_template_directory_uri().'/images/logo_new.png" alt="'.get_bloginfo('title').'">';
 								
 							endif;
 
