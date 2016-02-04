@@ -510,7 +510,7 @@ function zerif_register_default_widgets() {
 
         /* our team widget #1 */
         $active_widgets[ 'sidebar-ourteam' ][0] = 'zerif_team-widget-' . $zerif_lite_counter;
-        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'ASHLEY SIMMONS', 'position' => 'Project Manager', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team1.png" );
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'ASHLEY SIMMONS', 'position' => 'Project Manager', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/new_assist/images/home196.svg" );
         update_option( 'widget_zerif_team-widget', $ourteam_content );
         $zerif_lite_counter++;
 
@@ -527,6 +527,30 @@ function zerif_register_default_widgets() {
         $zerif_lite_counter++;
 
         /* our team widget #4 */
+        $active_widgets[ 'sidebar-ourteam' ][] = 'zerif_team-widget-' . $zerif_lite_counter;
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'JASON LANE', 'position' => 'Business Development', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team4.png" );
+        update_option( 'widget_zerif_team-widget', $ourteam_content );
+        $zerif_lite_counter++;
+
+        /* our team widget #5 */
+        $active_widgets[ 'sidebar-ourteam' ][] = 'zerif_team-widget-' . $zerif_lite_counter;
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'JASON LANE', 'position' => 'Business Development', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team4.png" );
+        update_option( 'widget_zerif_team-widget', $ourteam_content );
+        $zerif_lite_counter++;
+
+        /* our team widget #6 */
+        $active_widgets[ 'sidebar-ourteam' ][] = 'zerif_team-widget-' . $zerif_lite_counter;
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'JASON LANE', 'position' => 'Business Development', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team4.png" );
+        update_option( 'widget_zerif_team-widget', $ourteam_content );
+        $zerif_lite_counter++;
+
+        /* our team widget #7 */
+        $active_widgets[ 'sidebar-ourteam' ][] = 'zerif_team-widget-' . $zerif_lite_counter;
+        $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'JASON LANE', 'position' => 'Business Development', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team4.png" );
+        update_option( 'widget_zerif_team-widget', $ourteam_content );
+        $zerif_lite_counter++;
+
+        /* our team widget #8 */
         $active_widgets[ 'sidebar-ourteam' ][] = 'zerif_team-widget-' . $zerif_lite_counter;
         $ourteam_content[ $zerif_lite_counter ] = array ( 'name' => 'JASON LANE', 'position' => 'Business Development', 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus, eros at accumsan auctor, felis eros condimentum quam, non porttitor est urna vel neque', 'fb_link' => '#', 'tw_link' => '#', 'bh_link' => '#', 'db_link' => '#', 'ln_link' => '#', 'image_uri' => get_template_directory_uri()."/images/team4.png" );
         update_option( 'widget_zerif_team-widget', $ourteam_content );
@@ -927,53 +951,53 @@ class zerif_team_widget extends WP_Widget{
 						<h3 class="dark-text red-border-bottom"><?php echo apply_filters('widget_title', $instance['name']); ?></h3>
 						
 					<?php endif; ?>	
-
-					<?php if( !empty($instance['position']) ): ?>
-					
-						<div class="position"><?php echo htmlspecialchars_decode(apply_filters('widget_title', $instance['position'])); ?></div>
-				
-					<?php endif; ?>
-
-                </div>
-
-                <div class="social-icons">
-
-                    <ul>
-                        <?php
-                            $zerif_team_target = '_self';
-                            if( !empty($instance['open_new_window']) ):
-                                $zerif_team_target = '_blank';
-                            endif;
-                        ?>
-
-                        <?php if ( !empty($instance['fb_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['fb_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-facebook"></i></a></li>
-                        <?php endif; ?>
-
-                        <?php if ( !empty($instance['tw_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['tw_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-twitter"></i></a></li>
-                        <?php endif; ?>
-
-                        <?php if ( !empty($instance['bh_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['bh_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-behance"></i></a></li>
-                        <?php endif; ?>
-
-                        <?php if ( !empty($instance['db_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['db_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-dribbble"></i></a></li>
-                        <?php endif; ?>
-						
-						<?php if ( !empty($instance['ln_link']) ): ?>
-                            <li><a href="<?php echo apply_filters('widget_title', $instance['ln_link']); ?>" target="<?php echo $zerif_team_target; ?>"><i
-                                        class="fa fa-linkedin"></i></a></li>
-                        <?php endif; ?>
-
-                    </ul>
+<!---->
+<!--					--><?php //if( !empty($instance['position']) ): ?>
+<!--					-->
+<!--						<div class="position">--><?php //echo htmlspecialchars_decode(apply_filters('widget_title', $instance['position'])); ?><!--</div>-->
+<!--				-->
+<!--					--><?php //endif; ?>
 
                 </div>
+
+<!--                <div class="social-icons">-->
+<!---->
+<!--                    <ul>-->
+<!--                        --><?php
+//                            $zerif_team_target = '_self';
+//                            if( !empty($instance['open_new_window']) ):
+//                                $zerif_team_target = '_blank';
+//                            endif;
+//                        ?>
+<!---->
+<!--                        --><?php //if ( !empty($instance['fb_link']) ): ?>
+<!--                            <li><a href="--><?php //echo apply_filters('widget_title', $instance['fb_link']); ?><!--" target="--><?php //echo $zerif_team_target; ?><!--"><i-->
+<!--                                        class="fa fa-facebook"></i></a></li>-->
+<!--                        --><?php //endif; ?>
+<!---->
+<!--                        --><?php //if ( !empty($instance['tw_link']) ): ?>
+<!--                            <li><a href="--><?php //echo apply_filters('widget_title', $instance['tw_link']); ?><!--" target="--><?php //echo $zerif_team_target; ?><!--"><i-->
+<!--                                        class="fa fa-twitter"></i></a></li>-->
+<!--                        --><?php //endif; ?>
+<!---->
+<!--                        --><?php //if ( !empty($instance['bh_link']) ): ?>
+<!--                            <li><a href="--><?php //echo apply_filters('widget_title', $instance['bh_link']); ?><!--" target="--><?php //echo $zerif_team_target; ?><!--"><i-->
+<!--                                        class="fa fa-behance"></i></a></li>-->
+<!--                        --><?php //endif; ?>
+<!---->
+<!--                        --><?php //if ( !empty($instance['db_link']) ): ?>
+<!--                            <li><a href="--><?php //echo apply_filters('widget_title', $instance['db_link']); ?><!--" target="--><?php //echo $zerif_team_target; ?><!--"><i-->
+<!--                                        class="fa fa-dribbble"></i></a></li>-->
+<!--                        --><?php //endif; ?>
+<!--						-->
+<!--						--><?php //if ( !empty($instance['ln_link']) ): ?>
+<!--                            <li><a href="--><?php //echo apply_filters('widget_title', $instance['ln_link']); ?><!--" target="--><?php //echo $zerif_team_target; ?><!--"><i-->
+<!--                                        class="fa fa-linkedin"></i></a></li>-->
+<!--                        --><?php //endif; ?>
+<!---->
+<!--                    </ul>-->
+<!---->
+<!--                </div>-->
 
 				<?php if( !empty($instance['description']) ): ?>
                 <div class="details">

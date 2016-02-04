@@ -467,7 +467,7 @@ function zerif_customize_register( $wp_customize ) {
 			'settings' => 'zerif_bigtitle_redbutton_label',
 			'priority'    => 3,
 		));
-		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#focus'));
+		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#feature'));
 		$wp_customize->add_control( 'zerif_bigtitle_redbutton_url', array(
 			'label'    => __( 'Red button link', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
@@ -475,14 +475,14 @@ function zerif_customize_register( $wp_customize ) {
 			'priority'    => 4,
 		));
 		/* green button */
-		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __("What's inside",'zerif-lite')));
+		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __("How it works",'zerif-lite')));
 		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_label', array(
 			'label'    => __( 'Green button label', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
 			'settings' => 'zerif_bigtitle_greenbutton_label',
 			'priority'    => 5,
 		));
-		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#focus'));
+		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#aboutus'));
 		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_url', array(
 			'label'    => __( 'Green button link', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
@@ -578,7 +578,7 @@ function zerif_customize_register( $wp_customize ) {
 			'settings' => 'zerif_bigtitle_redbutton_label',
 			'priority'    => 3,
 		));
-		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#focus'));
+		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#team'));
 		$wp_customize->add_control( 'zerif_bigtitle_redbutton_url', array(
 			'label'    => __( 'Red button link', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
@@ -586,14 +586,14 @@ function zerif_customize_register( $wp_customize ) {
 			'priority'    => 4,
 		));
 		/* green button */
-		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __("What's inside",'zerif-lite')));
+		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __("How it works",'zerif-lite')));
 		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_label', array(
 			'label'    => __( 'Red button label', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
 			'settings' => 'zerif_bigtitle_greenbutton_label',
 			'priority'    => 5,
 		));
-		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#focus'));
+		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#team'));
 		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_url', array(
 			'label'    => __( 'Green button link', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
@@ -757,7 +757,7 @@ function zerif_customize_register( $wp_customize ) {
 		));
 		
 		/* title */
-		$wp_customize->add_setting( 'zerif_aboutus_title', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('About','zerif-lite')));
+		$wp_customize->add_setting( 'zerif_aboutus_title', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('How it works','zerif-lite')));
 		$wp_customize->add_control( 'zerif_aboutus_title', array(
 					'label'    => __( 'Title', 'zerif-lite' ),
 					'section'  => 'zerif_aboutus_main_section',
@@ -773,7 +773,7 @@ function zerif_customize_register( $wp_customize ) {
 				'priority'    => 3,
 		));
 		/* big left title */
-		$wp_customize->add_setting( 'zerif_aboutus_biglefttitle', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('Everything you see here is responsive and mobile-friendly.','zerif-lite')));
+		$wp_customize->add_setting( 'zerif_aboutus_biglefttitle', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('Dedicated personal assistant visits you once a week to take care of your tasks.','zerif-lite')));
 		$wp_customize->add_control( 'zerif_aboutus_biglefttitle', array(
 				'label'    => __( 'Big left side title', 'zerif-lite' ),
 				'section'  => 'zerif_aboutus_main_section',
@@ -790,7 +790,7 @@ function zerif_customize_register( $wp_customize ) {
 		));
 		
 		$wp_customize->add_section( 'zerif_aboutus_feat1_section' , array(
-				'title'       => __( 'Feature no#1', 'zerif-lite' ),
+				'title'       => __( 'Feature no#100', 'zerif-lite' ),
 				'priority'    => 3,
 				'panel' => 'panel_about'
 		));
@@ -810,7 +810,7 @@ function zerif_customize_register( $wp_customize ) {
 				'settings' => 'zerif_aboutus_feature1_text',
 				'priority'    => 7,
 		));
-		$wp_customize->add_setting( 'zerif_aboutus_feature1_nr', array('sanitize_callback' => 'zerif_sanitize_number', 'default' => '80'));
+		$wp_customize->add_setting( 'zerif_aboutus_feature1_nr', array('sanitize_callback' => 'zerif_sanitize_number', 'default' => '85'));
 		$wp_customize->add_control(
 			new Zerif_Customizer_Number_Control(
 				$wp_customize,
@@ -966,7 +966,7 @@ function zerif_customize_register( $wp_customize ) {
 				'priority'    => 3,
 		));
 		/* big left title */
-		$wp_customize->add_setting( 'zerif_aboutus_biglefttitle', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('Everything you see here is responsive and mobile-friendly.','zerif-lite')));
+		$wp_customize->add_setting( 'zerif_aboutus_biglefttitle', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('Dedicated personal assistant visits you once a week to take care of your tasks.','zerif-lite')));
 		$wp_customize->add_control( 'zerif_aboutus_biglefttitle', array(
 				'label'    => __( 'Big left side title', 'zerif-lite' ),
 				'section'  => 'zerif_aboutus_section',
@@ -996,7 +996,7 @@ function zerif_customize_register( $wp_customize ) {
 				'settings' => 'zerif_aboutus_feature1_text',
 				'priority'    => 7,
 		));
-		$wp_customize->add_setting( 'zerif_aboutus_feature1_nr', array('sanitize_callback' => 'zerif_sanitize_number', 'default' => '80'));
+		$wp_customize->add_setting( 'zerif_aboutus_feature1_nr', array('sanitize_callback' => 'zerif_sanitize_number', 'default' => '85'));
 		$wp_customize->add_control(
 			new Zerif_Customizer_Number_Control(
 				$wp_customize,
@@ -1127,7 +1127,7 @@ function zerif_customize_register( $wp_customize ) {
 			)
 		);
 		/* our team title */
-		$wp_customize->add_setting( 'zerif_ourteam_title', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('YOUR TEAM','zerif-lite')));
+		$wp_customize->add_setting( 'zerif_ourteam_title', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('FEATURES','zerif-lite')));
 		$wp_customize->add_control( 'zerif_ourteam_title', array(
 					'label'    => __( 'Title', 'zerif-lite' ),
 					'section'  => 'zerif_ourteam_section',
@@ -1163,7 +1163,7 @@ function zerif_customize_register( $wp_customize ) {
 			)
 		);
 		/* our team title */
-		$wp_customize->add_setting( 'zerif_ourteam_title', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('YOUR TEAM','zerif-lite')));
+		$wp_customize->add_setting( 'zerif_ourteam_title', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('FEATURES','zerif-lite')));
 		$wp_customize->add_control( 'zerif_ourteam_title', array(
 					'label'    => __( 'Title', 'zerif-lite' ),
 					'section'  => 'zerif_ourteam_section',

@@ -104,7 +104,7 @@
 
 					<?php
 
-						$zerif_aboutus_feature1_nr = get_theme_mod('zerif_aboutus_feature1_nr','80');
+						$zerif_aboutus_feature1_nr = get_theme_mod('zerif_aboutus_feature1_nr','85');
 
 						if( !empty($zerif_aboutus_feature1_nr) ):
 
