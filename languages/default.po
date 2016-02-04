@@ -825,7 +825,7 @@ msgstr ""
 
 #: inc/customizer.php:455
 #: inc/customizer.php:566
-msgid "ONE OF THE TOP 10 MOST POPULAR THEMES ON WORDPRESS.ORG"
+msgid "GET A PERSONAL ASSISTANT TO GET THINGS DONE, YOUR WAY!"
 msgstr ""
 
 #: inc/customizer.php:463

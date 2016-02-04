@@ -1734,8 +1734,8 @@ msgid "Hide big title section?"
 msgstr "¿Ocultar sección de título grande?"
 
 #: inc/customizer.php:455 inc/customizer.php:566 sections/big_title.php:1
-msgid "ONE OF THE TOP 10 MOST POPULAR THEMES ON WORDPRESS.ORG"
-msgstr "UNO DE LOS 10 TEMAS MÁS POPULARES EN WORDPRESS.ORG"
+msgid "GET A PERSONAL ASSISTANT TO GET THINGS DONE, YOUR WAY!"
+msgstr "GET A PERSONAL ASSISTANT TO GET THINGS DONE, YOUR WAY!"
 
 #: inc/customizer.php:463 inc/customizer.php:574 sections/big_title.php:1
 msgid "Features"

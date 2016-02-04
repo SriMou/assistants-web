@@ -222,21 +222,31 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 ?>
 
-</header> <!-- / END HOME SECTION  -->
+</div> <!-- / END HOME SECTION  -->
 
 <div id="content" class="site-content">
 
 <?php
 
-	/* OUR FOCUS SECTION */
+	/* OUR TEAM */
 
-	$zerif_ourfocus_show = get_theme_mod('zerif_ourfocus_show');
+	$zerif_ourteam_show = get_theme_mod('zerif_ourteam_show');
 
-	if( isset($zerif_ourfocus_show) && $zerif_ourfocus_show != 1 ):
+	if( isset($zerif_ourteam_show) && $zerif_ourteam_show != 1 ):
 
-		get_template_part( 'sections/our_focus' );
+		get_template_part( 'sections/our_team' );
 
 	endif;
+
+//	/* OUR FOCUS SECTION */
+//
+//	$zerif_ourfocus_show = get_theme_mod('zerif_ourfocus_show');
+//
+//	if( isset($zerif_ourfocus_show) && $zerif_ourfocus_show != 1 ):
+//
+//		get_template_part( 'sections/our_focus' );
+//
+//	endif;
 
 	/* RIBBON WITH BOTTOM BUTTON */
 
@@ -252,38 +262,30 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 	endif;
 
-	/* OUR TEAM */
 
-	$zerif_ourteam_show = get_theme_mod('zerif_ourteam_show');
 
-	if( isset($zerif_ourteam_show) && $zerif_ourteam_show != 1 ):
+//	/* TESTIMONIALS */
+//
+//	$zerif_testimonials_show = get_theme_mod('zerif_testimonials_show');
+//
+//	if( isset($zerif_testimonials_show) && $zerif_testimonials_show != 1 ):
+//
+//		get_template_part( 'sections/testimonials' );
+//
+//	endif;
 
-		get_template_part( 'sections/our_team' );
-
-	endif;
-
-	/* TESTIMONIALS */
-
-	$zerif_testimonials_show = get_theme_mod('zerif_testimonials_show');
-
-	if( isset($zerif_testimonials_show) && $zerif_testimonials_show != 1 ):
-
-		get_template_part( 'sections/testimonials' );
-
-	endif;
-
-	/* RIBBON WITH RIGHT SIDE BUTTON */
-
-	get_template_part( 'sections/ribbon_with_right_button' );
-
-	/* LATEST NEWS */
-	$zerif_latestnews_show = get_theme_mod('zerif_latestnews_show');
-
-	if( isset($zerif_latestnews_show) && $zerif_latestnews_show != 1 ):
-
-		get_template_part( 'sections/latest_news' );
-
-	endif;
+//	/* RIBBON WITH RIGHT SIDE BUTTON */
+//
+//	get_template_part( 'sections/ribbon_with_right_button' );
+//
+//	/* LATEST NEWS */
+//	$zerif_latestnews_show = get_theme_mod('zerif_latestnews_show');
+//
+//	if( isset($zerif_latestnews_show) && $zerif_latestnews_show != 1 ):
+//
+//		get_template_part( 'sections/latest_news' );
+//
+//	endif;
 
 		/* CONTACT US */
 		$zerif_contactus_show = get_theme_mod('zerif_contactus_show');

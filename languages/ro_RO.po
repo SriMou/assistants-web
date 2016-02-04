@@ -826,8 +826,8 @@ msgstr "Ascunde sectiunea Titlul principal?"
 
 #: inc/customizer.php:455
 #: inc/customizer.php:566
-msgid "ONE OF THE TOP 10 MOST POPULAR THEMES ON WORDPRESS.ORG"
-msgstr "UNA DIN PRIMELE 10 CELE MAI POPULARE TEME PE WORDPRESS.ORG"
+msgid "GET A PERSONAL ASSISTANT TO GET THINGS DONE, YOUR WAY!"
+msgstr "GET A PERSONAL ASSISTANT TO GET THINGS DONE, YOUR WAY!"
 
 #: inc/customizer.php:463
 #: inc/customizer.php:574
