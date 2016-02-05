@@ -166,7 +166,7 @@ function zerif_customize_register( $wp_customize ) {
 		));
 		
 		/* facebook */
-		$wp_customize->add_setting( 'zerif_socials_facebook', array('sanitize_callback' => 'esc_url_raw','default' => '#'));
+		$wp_customize->add_setting( 'zerif_socials_facebook', array('sanitize_callback' => 'esc_url_raw','default' => 'http://www.facebook.com/Assist-YU-App-1658280521109407'));
 		$wp_customize->add_control( 'zerif_socials_facebook', array(
 				'label'    => __( 'Facebook link', 'zerif-lite' ),
 				'section'  => 'zerif_general_socials_section',
@@ -174,7 +174,7 @@ function zerif_customize_register( $wp_customize ) {
 				'priority'    => 4,
 		));
 		/* twitter */
-		$wp_customize->add_setting( 'zerif_socials_twitter', array('sanitize_callback' => 'esc_url_raw','default' => '#'));
+		$wp_customize->add_setting( 'zerif_socials_twitter', array('sanitize_callback' => 'esc_url_raw','default' => 'http://twitter.com/assistyu'));
 		$wp_customize->add_control( 'zerif_socials_twitter', array(
 				'label'    => __( 'Twitter link', 'zerif-lite' ),
 				'section'  => 'zerif_general_socials_section',
@@ -222,7 +222,7 @@ function zerif_customize_register( $wp_customize ) {
 		)));
 			
 		/* email */   
-		$wp_customize->add_setting( 'zerif_email', array( 'sanitize_callback' => 'zerif_sanitize_text','default' => '<a href="mailto:contact@site.com">contact@site.com</a>') );
+		$wp_customize->add_setting( 'zerif_email', array( 'sanitize_callback' => 'zerif_sanitize_text','default' => '<a href="mailto:info@assistyu.com">info@assistyu.com</a>') );
 		$wp_customize->add_control( new Zerif_Customize_Textarea_Control( $wp_customize, 'zerif_email', array(
 				'label'   => __( 'Email', 'zerif-lite' ),
 				'section' => 'zerif_general_footer_section',
@@ -240,7 +240,7 @@ function zerif_customize_register( $wp_customize ) {
 		)));
 		/* phone number */
 			
-		$wp_customize->add_setting( 'zerif_phone', array('sanitize_callback' => 'zerif_sanitize_number','default' => '<a href="tel:0 332 548 954">0 332 548 954</a>') );
+		$wp_customize->add_setting( 'zerif_phone', array('sanitize_callback' => 'zerif_sanitize_number','default' => '<a href="tel:+91-9986850650">+91-9986850650</a>') );
 		$wp_customize->add_control(new Zerif_Customize_Textarea_Control( $wp_customize, 'zerif_phone', array(
 				'label'   => __( 'Phone number', 'zerif-lite' ),
 				'section' => 'zerif_general_footer_section',
@@ -258,7 +258,7 @@ function zerif_customize_register( $wp_customize ) {
 		)));
 		/* address */
 			
-		$wp_customize->add_setting( 'zerif_address', array( 'sanitize_callback' => 'zerif_sanitize_text', 'default' => __('Company address','zerif-lite') ) );
+		$wp_customize->add_setting( 'zerif_address', array( 'sanitize_callback' => 'zerif_sanitize_text', 'default' => '<a href="https://www.google.co.in/maps/place/W+Link+Rd,+Malleshwaram,+Bengaluru,+Karnataka+560003/@12.9949908,77.5710477,17z/data=!4m7!1m4!3m3!1s0x3bae162355a286f7:0xe82bdab3828b12d6!2sW+Link+Rd,+Malleshwaram,+Bengaluru,+Karnataka+560003!3b1!3m1!1s0x3bae162355a286f7:0xe82bdab3828b12d6">Company Address</a>' ) );
 		$wp_customize->add_control( new Zerif_Customize_Textarea_Control( $wp_customize, 'zerif_address', array(
 				'label'   => __( 'Address', 'zerif-lite' ),
 				'section' => 'zerif_general_footer_section',
@@ -327,7 +327,7 @@ function zerif_customize_register( $wp_customize ) {
 				'priority'    => 3,
 		));
 		/* facebook */
-		$wp_customize->add_setting( 'zerif_socials_facebook', array('sanitize_callback' => 'esc_url_raw','default' => '#'));
+		$wp_customize->add_setting( 'zerif_socials_facebook', array('sanitize_callback' => 'esc_url_raw','default' => 'http://www.facebook.com/Assist-YU-App-1658280521109407'));
 		$wp_customize->add_control( 'zerif_socials_facebook', array(
 				'label'    => __( 'Facebook link', 'zerif-lite' ),
 				'section'  => 'zerif_general_section',
@@ -335,7 +335,7 @@ function zerif_customize_register( $wp_customize ) {
 				'priority'    => 4,
 		));
 		/* twitter */
-		$wp_customize->add_setting( 'zerif_socials_twitter', array('sanitize_callback' => 'esc_url_raw','default' => '#'));
+		$wp_customize->add_setting( 'zerif_socials_twitter', array('sanitize_callback' => 'esc_url_raw','default' => 'http://twitter.com/assistyu'));
 		$wp_customize->add_control( 'zerif_socials_twitter', array(
 				'label'    => __( 'Twitter link', 'zerif-lite' ),
 				'section'  => 'zerif_general_section',
@@ -376,7 +376,7 @@ function zerif_customize_register( $wp_customize ) {
 		)));
 			
 		/* email */   
-		$wp_customize->add_setting( 'zerif_email', array( 'sanitize_callback' => 'zerif_sanitize_text','default' => __('support@codeinwp.com','zerif-lite')) );
+		$wp_customize->add_setting( 'zerif_email', array( 'sanitize_callback' => 'zerif_sanitize_text','default' => '<a href="mailto:info@assistyu.com">info@assistyu.com</a>') );
 		$wp_customize->add_control( new Zerif_Customize_Textarea_Control( $wp_customize, 'zerif_email', array(
 				'label'   => __( 'Email', 'zerif-lite' ),
 				'section' => 'zerif_general_section',
@@ -394,7 +394,7 @@ function zerif_customize_register( $wp_customize ) {
 		)));
 		/* phone number */
 			
-		$wp_customize->add_setting( 'zerif_phone', array('sanitize_callback' => 'zerif_sanitize_number','default' => __('Phone number','zerif-lite')) );
+		$wp_customize->add_setting( 'zerif_phone', array('sanitize_callback' => 'zerif_sanitize_number','default' => '<a href="tel:+91-9986850650">+91-9986850650</a>') );
 		$wp_customize->add_control(new Zerif_Customize_Textarea_Control( $wp_customize, 'zerif_phone', array(
 				'label'   => __( 'Phone number', 'zerif-lite' ),
 				'section' => 'zerif_general_section',
@@ -412,7 +412,7 @@ function zerif_customize_register( $wp_customize ) {
 		)));
 		/* address */
 			
-		$wp_customize->add_setting( 'zerif_address', array( 'sanitize_callback' => 'zerif_sanitize_text', 'default' => __('24B, Fainari Street, Bucharest, Romania','zerif-lite') ) );
+		$wp_customize->add_setting( 'zerif_address', array( 'sanitize_callback' => 'zerif_sanitize_text', 'default' => '<a href="https://www.google.co.in/maps/place/W+Link+Rd,+Malleshwaram,+Bengaluru,+Karnataka+560003/@12.9949908,77.5710477,17z/data=!4m7!1m4!3m3!1s0x3bae162355a286f7:0xe82bdab3828b12d6!2sW+Link+Rd,+Malleshwaram,+Bengaluru,+Karnataka+560003!3b1!3m1!1s0x3bae162355a286f7:0xe82bdab3828b12d6">Company Address</a>' ) );
 		$wp_customize->add_control( new Zerif_Customize_Textarea_Control( $wp_customize, 'zerif_address', array(
 				'label'   => __( 'Address', 'zerif-lite' ),
 				'section' => 'zerif_general_section',

@@ -24,7 +24,7 @@
 		$zerif_phone_icon = get_theme_mod('zerif_phone_icon',get_template_directory_uri().'/images/telephone65-blue.png');
 
 		$zerif_socials_facebook = get_theme_mod('zerif_socials_facebook','http://www.facebook.com/Assist-YU-App-1658280521109407');
-		$zerif_socials_twitter = get_theme_mod('zerif_socials_twitter','https://twitter.com/assistyu');
+		$zerif_socials_twitter = get_theme_mod('zerif_socials_twitter','http://twitter.com/assistyu');
 //		$zerif_socials_linkedin = get_theme_mod('zerif_socials_linkedin','#');
 //		$zerif_socials_behance = get_theme_mod('zerif_socials_behance','#');
 //		$zerif_socials_dribbble = get_theme_mod('zerif_socials_dribbble','#');
