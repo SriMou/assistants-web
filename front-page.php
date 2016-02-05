@@ -247,6 +247,7 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 //		get_template_part( 'sections/our_focus' );
 //
 //	endif;
+//    get_template_part( 'sections/ribbon_with_right_button' );
 
 	/* ABOUT US */
 
@@ -264,7 +265,8 @@ if ( get_option( 'show_on_front' ) == 'page' ) {
 
 
 
-//	/* TESTIMONIALS */
+
+    //	/* TESTIMONIALS */
 //
 //	$zerif_testimonials_show = get_theme_mod('zerif_testimonials_show');
 //

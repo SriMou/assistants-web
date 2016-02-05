@@ -459,36 +459,36 @@ function zerif_customize_register( $wp_customize ) {
 			'settings' => 'zerif_bigtitle_title',
 			'priority'    => 2,
 		));
-//		/* red button */
-//		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('Services','zerif-lite')));
-//		$wp_customize->add_control( 'zerif_bigtitle_redbutton_label', array(
-//			'label'    => __( 'Red button label', 'zerif-lite' ),
-//			'section'  => 'zerif_bigtitle_section',
-//			'settings' => 'zerif_bigtitle_redbutton_label',
-//			'priority'    => 3,
-//		));
-//		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#feature'));
-//		$wp_customize->add_control( 'zerif_bigtitle_redbutton_url', array(
-//			'label'    => __( 'Red button link', 'zerif-lite' ),
-//			'section'  => 'zerif_bigtitle_section',
-//			'settings' => 'zerif_bigtitle_redbutton_url',
-//			'priority'    => 4,
-//		));
-//		/* green button */
-//		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __("How it works",'zerif-lite')));
-//		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_label', array(
-//			'label'    => __( 'Green button label', 'zerif-lite' ),
-//			'section'  => 'zerif_bigtitle_section',
-//			'settings' => 'zerif_bigtitle_greenbutton_label',
-//			'priority'    => 5,
-//		));
-//		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#aboutus'));
-//		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_url', array(
-//			'label'    => __( 'Green button link', 'zerif-lite' ),
-//			'section'  => 'zerif_bigtitle_section',
-//			'settings' => 'zerif_bigtitle_greenbutton_url',
-//			'priority'    => 6,
-//		));
+		/* red button */
+		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('Book Individual Services','zerif-lite')));
+		$wp_customize->add_control( 'zerif_bigtitle_redbutton_label', array(
+			'label'    => __( 'Red button label', 'zerif-lite' ),
+			'section'  => 'zerif_bigtitle_section',
+			'settings' => 'zerif_bigtitle_redbutton_label',
+			'priority'    => 3,
+		));
+		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => 'http://goo.gl/forms/WZUKlBTkD8'));
+		$wp_customize->add_control( 'zerif_bigtitle_redbutton_url', array(
+			'label'    => __( 'Red button link', 'zerif-lite' ),
+			'section'  => 'zerif_bigtitle_section',
+			'settings' => 'zerif_bigtitle_redbutton_url',
+			'priority'    => 4,
+		));
+		/* green button */
+		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __("Book Monthly Services",'zerif-lite')));
+		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_label', array(
+			'label'    => __( 'Green button label', 'zerif-lite' ),
+			'section'  => 'zerif_bigtitle_section',
+			'settings' => 'zerif_bigtitle_greenbutton_label',
+			'priority'    => 5,
+		));
+		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => 'http://goo.gl/forms/EGV2qzna9K'));
+		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_url', array(
+			'label'    => __( 'Green button link', 'zerif-lite' ),
+			'section'  => 'zerif_bigtitle_section',
+			'settings' => 'zerif_bigtitle_greenbutton_url',
+			'priority'    => 6,
+		));
 
 		/****************************************************/
 		/************	PARALLAX IMAGES *********************/
@@ -571,14 +571,14 @@ function zerif_customize_register( $wp_customize ) {
 			'priority'    => 2,
 		));
 		/* red button */
-		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('Services','zerif-lite')));
+		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __('Book Individual Services','zerif-lite')));
 		$wp_customize->add_control( 'zerif_bigtitle_redbutton_label', array(
 			'label'    => __( 'Red button label', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
 			'settings' => 'zerif_bigtitle_redbutton_label',
 			'priority'    => 3,
 		));
-		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#team'));
+		$wp_customize->add_setting( 'zerif_bigtitle_redbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => 'http://goo.gl/forms/WZUKlBTkD8'));
 		$wp_customize->add_control( 'zerif_bigtitle_redbutton_url', array(
 			'label'    => __( 'Red button link', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
@@ -586,14 +586,14 @@ function zerif_customize_register( $wp_customize ) {
 			'priority'    => 4,
 		));
 		/* green button */
-		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __("How it works",'zerif-lite')));
+		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_label', array('sanitize_callback' => 'zerif_sanitize_text','default' => __("Book Monthly Services",'zerif-lite')));
 		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_label', array(
 			'label'    => __( 'Red button label', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
 			'settings' => 'zerif_bigtitle_greenbutton_label',
 			'priority'    => 5,
 		));
-		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => esc_url( home_url( '/' ) ).'#team'));
+		$wp_customize->add_setting( 'zerif_bigtitle_greenbutton_url', array('sanitize_callback' => 'esc_url_raw','default' => 'http://goo.gl/forms/EGV2qzna9K'));
 		$wp_customize->add_control( 'zerif_bigtitle_greenbutton_url', array(
 			'label'    => __( 'Green button link', 'zerif-lite' ),
 			'section'  => 'zerif_bigtitle_section',
